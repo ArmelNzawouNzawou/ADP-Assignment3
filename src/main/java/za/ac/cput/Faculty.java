@@ -3,10 +3,13 @@ package za.ac.cput;
 public class Faculty {
 
     //Encapsulation
-    private String facultyName = "Informatics and Design";
-    private String facultyColor ="Red";
+    private String facultyName  ;
+    private String facultyColor ;
 
-
+    public Faculty(String facultyName,String facultyColor) {
+        this.facultyName = facultyName;
+        this.facultyColor = facultyColor;
+    }
 
     public String getFacultyName() {
         return facultyName;
@@ -25,39 +28,25 @@ public class Faculty {
     }
 
 
+    public  void  termDates () {
 
-    public  static void academicYear () {
+        System.out.println("Academic Year: 2020");
+        System.out.println("\t Term 1: 03 February - 20 March");
+        System.out.println("\t Term 2: 06 April - 15 May ");
+        System.out.println("\t Term 3: 13 July - 28 August");
+        System.out.println("\t Term 4: 07 September - 11 December ");
 
-        String year = "Year: 2020";
-        String Semester = "Semester: 1";
-
-        System.out.println(year);
-        System.out.println(Semester);
 
     }
 
 
-    public void function() {
-        System.out.println("A Faculty: includes many departments ");
-    }
 
 
-//    public static void main (String[]args ) {
-//
-////
-////        Faculty fac = new Faculty();
-////
-////    fac.setFacultyName("Faculty Name: Informatics and Design");
-////    System.out.println(fac.getFacultyName());
-////
-////    fac.setFacultyColor(" Faculty Color: Red");
-////    System.out.println(fac.getFacultyColor());
-//
-//
-//
-//
-//
-//
-//}
 
-}
+     }
+
+
+
+
+
+

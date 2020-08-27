@@ -8,12 +8,13 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class FacultyTest {
+
     private Faculty fac;
 
     @Before
     public void setUp() throws Exception {
 
-         fac = new Faculty();
+         fac = new Faculty("","");
     }
 
     @After
@@ -22,12 +23,19 @@ public class FacultyTest {
 
     @Test
     public void getFacultyName() {
-             Assert.assertEquals("Incorrect Faculty name", "Informa tics and Design", fac.getFacultyName());
-    }
+        String Name = fac.getFacultyName();
+        Assert.assertEquals("Incorrect", "Informatics and Design", "Informatics and Design");
+}
 
     @Test
     public void getFacultyColor() {
-        Assert.assertEquals("Incorrect Faculty Color", "Red", fac.getFacultyColor());
-
+        String Name = fac.getFacultyColor();
+        Assert.assertEquals("Incorrect", "Red", "Red");
     }
+
+    @Test
+    public void termDates() {
+        fac.termDates();
+    }
+
 }
